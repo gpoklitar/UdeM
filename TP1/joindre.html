@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8" />
+        <title>Page sur le Judo</title> 
+    </head>
+    <body>
+        <header>
+            <h1>柔道 - JUDO</h1>
+            <nav>
+                <a href="index.html">Accueil</a>
+                <a href="categories.html">Catégories</a>
+                <a href="surnous.html">Sur nous</a>
+                <a href="joindre.html">Nous joindre</a>
+                <a href="https://www-ens.iro.umontreal.ca/~poklitag/yassik1/index.html">Lien du site externe</a>
+            </nav>
+        </header>
+        <main>
+            <section>
+                <h2>Nous joindre</h2>
+                <i>Téléphone : (514)-555-5555<br>Fax : (514)-555-5555<br><br>9999 Edouard Montpetit Blvd,<br>Montreal, Quebec A1A 1A1</i>
+                <address>
+                    <br><a href="mailto:gueorgui.poklitar@umontreal.ca">Envoyer un courriel</a><br>
+                </address>
+                <br>
+            </section>
+        </main>
+        <footer>
+            <div>
+                <a href="http://validator.w3.org/check?uri=referer"  onclick="this.href='http://validator.w3.org/check?uri=' + 
+                document.URL">
+                <img src="http://www.w3.org/html/logo/badge/html5-badge-h-semantics.png"
+                width="133" height="64" 
+                alt="HTML5 Powered with Semantics"
+                title="HTML5 Powered with Semantics"/>
+                </a>
+            </div>
+            <div id = "datetime"></div>
+            <script>
+                var date = document.lastModified;
+                document.getElementById("datetime").innerHTML = "Droits d'auteur © Gueorgui Poklitar, (20251051). " + date;
+            </script>
+        </footer>
+    </body>
+</html>
