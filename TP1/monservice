@@ -1,0 +1,8 @@
+#!/bin/bash
+
+# chkconfig: 235 10 90
+
+# description: Message lors du démarrage.
+
+ echo "Démarrage de mon ordi IFT3830"
+ exit 0

@@ -1,0 +1,35 @@
+#!/bin/bash
+
+endsWith() {
+  case $1 in
+    *"$2") return 0;;
+    *) return 1;;
+  esac
+}
+
+for directory in "$@"; do
+  if [ -d "$directory" ]; then
+    cd "$directory" || exit 1
+
+    for file in $(ls -A 2> /dev/null); do
+      if endsWith "$file" ".pdf"; then
+        if [ -f "../$file" ]; then
+          rm "$file"
+        else
+          mv "$file" ..
+        fi
+      else
+        cat "$file" >> "../$file"
+        rm "$file"
+      fi
+    done
+
+    cd ..
+
+    rm -r "$directory"
+  else
+    echo "Le répertoire '$directory' n'existe pas."
+  fi
+done
+
+exit 0

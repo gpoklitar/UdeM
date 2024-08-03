@@ -1,0 +1,18 @@
+#!/bin/bash
+
+if [ "$#" -ne 1 ] 
+    then
+    echo "Le nombre de paramètre n'est pas correct"
+    exit 1
+fi
+
+IFS=":"  
+
+for dir in $PATH
+    do
+    echo "Répertoire $dir :"
+    find "$dir" -maxdepth 1 -type f -name "*ls*"
+done
+
+exit 0
+
