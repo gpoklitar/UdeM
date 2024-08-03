@@ -1,0 +1,226 @@
+<!-- 
+Nom: Gueorgui Poklitar
+TP2-IFT1142
+Description: Page html, incluant les appels des formulais modal.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Collection de Films</title>
+    <link rel="stylesheet" type="text/css" href="client/utilitaires/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" type="text/css" href="/client/css/style.css">
+    <script src="client/utilitaires/jquery-3.7.1.min.js"></script>
+    <script src="client/utilitaires/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="/client/js/requetes.js"></script>
+    <script src="/client/js/vues.js"></script>
+</head>
+<body onLoad="obtenirListeFilms();">
+    <header>
+        <nav class="navbar navbar-expand-lg navbar-light bg-light">
+            <div class="container-fluid">
+                <!-- Marque / Logo de la Barre de Navigation -->
+                <a class="navbar-brand" href="#">
+                    <img src="/client/images/logo.png" alt="Logo de la marque" style="max-height: 75px;">
+                </a>                
+                <!-- Bouton pour Réduire la Barre de Navigation -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <!-- Contenu de la Barre de Navigation Réduite -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Liste de la Barre de Navigation -->
+                    <ul class="navbar-nav">
+                        <!-- Menu déroulant pour Trier Par -->
+                        <li class="nav-item dropdown">
+                            <select class="form-select" aria-label="Trier par" id="selTri">
+                                <option value="title">Titre</option>
+                                <option value="year">Année</option>
+                                <option value="runtime">Durée en min.</option>
+                            </select>
+                        </li>
+                        <!-- Menu déroulant pour Ordre Du Tri -->
+                        <li class="nav-item dropdown">
+                            <select class="form-select" aria-label="Ordre du tri" id="selOrdre">
+                                <option value="asc">Croissant</option>
+                                <option value="desc">Décroissant</option>
+                            </select>
+                        </li>
+                        <!-- Champ de Recherche -->
+                        <li class="nav-item">
+                            <input type="text" id="searchInput" class="form-control" placeholder="Rechercher">
+                        </li>
+                        <!-- Bouton de Recherche -->
+                        <li class="nav-item">
+                            <button class="btn btn-primary" onclick="rechercheFilms();">Rechercher</button>
+                        </li>
+                        <!-- Menu déroulant pour Filtrer par Genre -->
+                        <li class="nav-item dropdown">
+                            <select class="form-select" aria-label="Genres" id="selGenres">
+                                <!-- Les options seront remplies dynamiquement -->
+                            </select>
+                        </li>
+                    </ul>
+                </div>
+                <!-- Modal pour Ajouter un Film -->
+                <div class="modal fade" id="addMovieModal" tabindex="-1" aria-labelledby="addMovieModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="addMovieModalLabel">Ajouter un Nouveau Film</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                            </div>
+                            <div class="modal-body">
+                                <form id="addMovieForm">
+                                    <div class="mb-3">
+                                        <label for="addMovieId" class="form-label">ID du Film</label>
+                                        <input type="number" class="form-control" id="addMovieId" readonly>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMovieTitle" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="addMovieTitle" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMovieYear" class="form-label">Année</label>
+                                        <input type="number" class="form-control" id="addMovieYear" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMovieRuntime" class="form-label">Durée (en minutes)</label>
+                                        <input type="number" class="form-control" id="addMovieRuntime" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMovieGenres" class="form-label">Genres</label>
+                                        <input type="text" class="form-control" id="addMovieGenres" placeholder="Comédie, Drame, Action" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMovieDirector" class="form-label">Réalisateur</label>
+                                        <input type="text" class="form-control" id="addMovieDirector" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMovieActors" class="form-label">Acteurs</label>
+                                        <input type="text" class="form-control" id="addMovieActors" placeholder="Acteur 1, Acteur 2" required>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMoviePlot" class="form-label">Synopsis</label>
+                                        <textarea class="form-control" id="addMoviePlot" rows="4" required></textarea>
+                                    </div>
+                                    <div class="mb-3">
+                                        <label for="addMoviePosterUrl" class="form-label">URL de l'Affiche</label>
+                                        <input type="text" class="form-control" id="addMoviePosterUrl">
+                                    </div>
+                                    <button type="submit" class="btn btn-primary">Soumettre</button>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>                
+                <div class="modal fade" id="deleteMovieModal" tabindex="-1" aria-labelledby="deleteMovieModalLabel" aria-hidden="true">
+                    <div class="modal-dialog">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                            <h5 class="modal-title" id="deleteMovieModalLabel">Confirmer la Suppression</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                            </div>
+                            <div class="modal-body">
+                            Êtes-vous sûr de vouloir supprimer ce film ?
+                            </div>
+                            <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                            <button type="button" class="btn btn-danger" id="confirmDelete">Supprimer</button>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!-- Modal pour Éditer un Film -->
+                <div class="modal fade" id="editMovieModal" tabindex="-1" aria-labelledby="editMovieModalLabel" aria-hidden="true">
+                    <div class="modal-dialog modal-dialog-centered modal-lg">
+                        <div class="modal-content">
+                            <div class="modal-header">
+                                <h5 class="modal-title" id="editMovieModalLabel">Modifier le Film</h5>
+                                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Fermer"></button>
+                            </div>
+                            <div class="modal-body">
+                                <!-- Formulaire pour Modifier un Film -->
+                                <form id="editMovieForm">
+                                    <div class="mb-3">
+                                        <label for="editMovieId" class="form-label">ID du Film</label>
+                                        <input type="text" class="form-control" id="editMovieId" readonly>
+                                    </div>
+                                    <!-- Champ pour le Titre -->
+                                    <div class="mb-3">
+                                        <label for="editMovieTitle" class="form-label">Titre</label>
+                                        <input type="text" class="form-control" id="editMovieTitle" required>
+                                    </div>
+                                    <!-- Champ pour l'Année -->
+                                    <div class="mb-3">
+                                        <label for="editMovieYear" class="form-label">Année</label>
+                                        <input type="number" class="form-control" id="editMovieYear" required>
+                                    </div>
+                                    <!-- Champ pour la Durée -->
+                                    <div class="mb-3">
+                                        <label for="editMovieRuntime" class="form-label">Durée (en minutes)</label>
+                                        <input type="number" class="form-control" id="editMovieRuntime" required>
+                                    </div>
+                                    <!-- Champ pour les Genres -->
+                                    <div class="mb-3">
+                                        <label for="editMovieGenres" class="form-label">Genres</label>
+                                        <input type="text" class="form-control" id="editMovieGenres" placeholder="Comédie, Drame, Action" required>
+                                    </div>
+                                    <!-- Champ pour le Réalisateur -->
+                                    <div class="mb-3">
+                                        <label for="editMovieDirector" class="form-label">Réalisateur</label>
+                                        <input type="text" class="form-control" id="editMovieDirector" required>
+                                    </div>
+                                    <!-- Champ pour les Acteurs -->
+                                    <div class="mb-3">
+                                        <label for="editMovieActors" class="form-label">Acteurs</label>
+                                        <input type="text" class="form-control" id="editMovieActors" required>
+                                    </div>
+                                    <!-- Champ pour le Synopsis -->
+                                    <div class="mb-3">
+                                        <label for="editMoviePlot" class="form-label">Synopsis</label>
+                                        <textarea class="form-control" id="editMoviePlot" rows="4" required></textarea>
+                                    </div>
+                                    <!-- Champ pour l'URL de l'Affiche -->
+                                    <div class="mb-3">
+                                        <label for="editMoviePosterUrl" class="form-label">URL de l'Affiche</label>
+                                        <input type="text" class="form-control" id="editMoviePosterUrl" required>
+                                    </div>
+                                    <!-- Champ caché pour stocker l'ID du film -->
+                                    <input type="hidden" id="editMovieId">
+                                    <!-- Boutons pour Soumettre le Formulaire -->
+                                    <div class="modal-footer">
+                                        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                                        <button type="submit" class="btn btn-primary">Sauvegarder</button>
+                                    </div>
+                                </form>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div id="pagination" class="pagination">
+                    <!-- Les boutons de pagination seront placés ici -->
+                </div>
+                <button type="button" class="btn btn-success" data-bs-toggle="modal" data-bs-target="#addMovieModal">
+                Ajouter un Film
+                </button>
+            </div>
+        </nav>
+    </header>
+    <main class="container mt-4">
+        <!-- Liste des Films -->
+        <div id="listeFilms" class="row">
+            <!-- Les cartes des films seront insérées ici via JavaScript -->
+        </div>
+    </main>
+    <script>
+        // Assurez-vous que ceci est à la fin du body, pour qu'il se charge après les autres scripts
+        $(document).ready(function() {
+            // Initialise la pagination une fois le document entièrement chargé
+            // Remarque : Veuillez remplacer 'path/to/pagination-plugin-js.js' et 'path/to/pagination-plugin-css.css' par vos chemins d'accès réels aux plugins.
+        });
+    </script>
+</body>
+</html>

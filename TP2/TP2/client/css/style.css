@@ -1,0 +1,204 @@
+/*
+Nom: Gueorgui Poklitar
+TP2-IFT1142
+Description: Fichier cosmetique du projet.
+*/
+
+
+/* Réinitialisation des marges et des rembourrages */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Style de la barre de navigation */
+.navbar {
+  background-color: grey; /* Ajustez la couleur pour correspondre au thème de votre site */
+  padding: 1rem;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); /* Ombre subtile pour la profondeur */
+}
+
+nav {
+  padding-top: 10%;
+}
+
+button.btn.btn-success {
+  margin-left: 15px;
+  font-size: auto;
+}
+
+select#selGenres.form-select {
+  margin-right: 15px;
+}
+
+/* Styles du logo */
+.navbar-brand img {
+  max-height: 50px; /* Ajustez la taille de votre logo */
+}
+
+/* Éléments de la barre de navigation */
+.navbar-nav {
+  display: flex;
+  align-items: center;
+  gap: 1rem; /* Espacement entre les éléments de la barre de navigation */
+}
+
+.nav-item {
+  list-style: none;
+}
+
+body {
+  background-color: rgb(211, 211, 211);
+}
+
+div.card-body {
+  padding: 0px;
+  max-width: 75%;
+}
+
+.nav-item label {
+  margin-right: 0.5rem;
+  font-weight: bold;
+  color: #333333;
+}
+
+/* Contrôles de formulaire */
+.form-select,
+.form-control {
+  min-width: 150px;
+}
+
+/* Styles de bouton */
+.btn-primary {
+  background-color: #0056b3; /* Ajustez la couleur du bouton selon votre thème */
+  border: none;
+  padding: 0.5rem 1rem;
+  cursor: pointer;
+  margin-bottom: 5pt;
+  max-width: 120px;
+}
+
+.btn-info {
+  margin-bottom: 5pt;
+}
+
+.btn-danger {
+  margin-bottom: 5pt;
+}
+
+.btn-primary:hover {
+  background-color: #004494;
+}
+
+div.card {
+  margin-right: 10px;
+}
+
+input#editMovieId.form-control {
+  max-width: 50px;
+  background-color: rgba(189, 188, 188, 0.582);
+}
+
+input#addMovieId.form-control {
+  max-width: 50px;
+  background-color: rgba(189, 188, 188, 0.582);
+}
+
+/* Ajustements pour les écrans mobiles */
+@media (max-width: 1100px) {
+  .navbar-nav {
+      flex-direction: column;
+  }
+
+  .nav-item {
+      width: 100%; /* Éléments de navigation en largeur totale pour les écrans plus petits */
+      margin-bottom: 0.5rem;
+  }
+
+  .btn-primary {
+      width: 100%;
+  }
+}
+
+/* Style pour le formulaire modal */
+#addMovieModal .modal-content {
+  padding: 20px;
+}
+
+#addMovieModal label {
+  display: block;
+  margin-bottom: .5rem;
+}
+
+#addMovieModal .form-control {
+  margin-bottom: 1rem;
+}
+
+#addMovieModal .btn-primary {
+  margin-top: 1rem;
+}
+
+/* Styles de base pour la carte de film */
+.card {
+  margin-bottom: 1rem;
+  transition: transform 0.2s; /* Transition lisse pour l'effet de survol */
+}
+
+.card:hover {
+  transform: scale(1.03); /* Légèrement agrandir la carte au survol */
+}
+
+/* Disposition horizontale pour les écrans larges */
+@media (min-width: 1000px) { /* Ajustez le point de rupture selon les besoins */
+  .card {
+      flex-wrap: wrap;
+      display: flex;
+      flex-direction: row;
+      justify-content: space-between;
+      align-items: center;
+      padding: 1rem;
+  }
+  .card img {
+      flex: 1 0 auto; /* Permettre à l'image de rétrécir mais pas de grandir */
+      width: auto; /* Remplacez la largeur par défaut de Bootstrap */
+      max-width: 200px; /* Définir une largeur maximale pour l'image */
+      height: auto;
+      margin-right: 1rem;
+  }
+  .card-body {
+      flex: 3 1 auto; /* Permettre au corps de grandir et de rétrécir */
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-top: 16px;
+      margin-bottom: 0px;
+      border-radius: 25px;
+  }
+
+  .card-title, .card-text {
+      margin-bottom: 0.5rem;
+  }
+  .card-actions {
+      flex: 0 0 auto; /* Ne pas permettre aux actions de grandir ou de rétrécir */
+      display: flex;
+      flex-direction: column;
+      align-items: flex-end;
+  }
+  .btn {
+      margin-bottom: 0.5rem; /* Espace entre les boutons */
+  }
+  .collapse-content {
+      width: 100%; /* Largeur totale */
+      order: 3; /* Mettre en dernier */
+  }
+}
+
+/* Styles pour les petits écrans (mobiles) */
+@media (max-width: 991px) {
+  /* Les cartes s'empileront verticalement par défaut, donc vous n'avez peut-être pas besoin de styles supplémentaires ici */
+}
+
+ul.navbar-nav {
+  margin-top: 15px;
+}
