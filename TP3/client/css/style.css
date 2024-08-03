@@ -1,0 +1,87 @@
+.nav-perso{
+    background-color: aqua !important; 
+    height: 100px;
+}
+
+.card{
+    margin:15px;
+    padding:10px;
+}
+
+.img-livres-h{
+    width: 200px;
+    height: 100px;
+    object-fit: cover;
+}
+
+.img-livres-v {
+    width: 100%;
+    height: 148px;
+    object-fit: cover;
+}
+
+li.nav-item{
+    list-style-type: none;
+    margin:15px;
+}
+
+.pad-top{
+    margin-top: 20px;
+    font-size: 18px;
+    color: black !important;
+}
+
+.btn-pad-top{
+    margin-top: 28px;
+}
+
+label{
+    width:170px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    font-size:18px;
+}
+
+.form-label{
+    text-align: left;
+    color: rgb(0, 0, 0);
+    font-size:14px;
+}
+
+.logo{
+    width: 80px;
+    height: 80px;
+    object-fit: cover;
+}
+
+.fa-pencil{
+    font-size: 18px !important;
+    color: white;
+}
+
+.fa-trash{
+    font-size: 18px !important;
+    color: white;
+}
+
+.p-plus{
+    float: right;
+    padding-right:200px;
+    font-size: 18px !important;
+    margin-top: 10px !important;
+}
+
+.fa-plus{
+    margin-top: 10px;
+    font-size: 18px !important;
+    color: white;
+}
+
+.span-btn{
+    margin-left: 10px;
+    margin-top: 60px;
+}
+
+.container{
+    margin-top: 60px;
+}

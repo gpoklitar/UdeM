@@ -1,0 +1,215 @@
+<!-- 
+Nom: Gueorgui Poklitar
+TP3-IFT1142
+Description: Page html, incluant les appels des formulairs modal.
+-->
+
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Base de données de films</title>
+    <link rel="stylesheet" href="client/utilitaires/bootstrap-5.3.2-dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="client/css/style.css">
+    <script src="client/utilitaires/jquery-3.7.1.min.js"></script>
+    <script src="client/utilitaires/bootstrap-5.3.2-dist/js/bootstrap.min.js"></script>
+    <script src="client/utilitaires/jquery.twbsPagination.min.js"></script>
+    <script src="client/js/requetes.js"></script>
+    <script src="client/js/vues.js"></script>
+</head>
+
+<body onLoad="obtenirListeFilms();">
+    <header>
+        <nav class="navbar navbar-expand-lg nav-perso">
+            <div class="container-fluid">
+                <a class="navbar-brand" href="#"><img class="logo" src="client/images/logo.png" alt="Logo"></a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item">
+                            <label for="selPresentationStyle">Style de présentation</label>
+                            <select id="selPresentationStyle" class="form-select" onchange="changePresentationStyle()">
+                                <option value="horizontal">Horizontal</option>
+                                <option value="vertical">Vertical</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <label for="selCategs">Genres</label>
+                            <select id="selCategs" class="form-select">
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <label for="selTri">Trier par</label>
+                            <select id="selTri" class="form-select">
+                                <option value="id">ID</option>
+                                <option value="title">Titre</option>
+                                <option value="year">Année</option>
+                                <option value="runtime">Durée</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <label for="selOrdre">Ordre de tri</label>
+                            <select id="selOrdre" class="form-select">
+                                <option value="cro">Croissant</option>
+                                <option value="dec">Décroissant</option>
+                            </select>
+                        </li>
+                        <li class="nav-item">
+                            <button type="button" class="btn btn-primary btn-pad-top" onclick="listerTri();">Appliquer le tri</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div id="pagination-container"></div>
+        </nav>
+    </header>
+    <p class="p-plus">
+        <button type="button" class="btn btn-secondary" data-bs-toggle="modal" data-bs-target="#addMovieModal">
+            <i class="fa fa-plus"></i> Ajouter un film
+        </button>        
+    </p>
+    <main>
+        <section class="container">
+            <div id="listeFilms" class="row"></div>
+
+        </section>
+    </main>
+    <!-- Modal pour ajouter de nouveaux films -->
+    <div class="modal fade" id="addMovieModal" tabindex="-1" role="dialog" aria-labelledby="addMovieModalLabel" aria-hidden="true">
+        <div class="modal-dialog" role="document">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="addMovieModalLabel">Ajouter un film</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                    </button>
+                </div>
+                <div class="modal-body">
+                    <form id="addMovieForm">
+                        <div class="mb-3">
+                            <label for="id" class="form-label">ID du film</label>
+                            <input type="text" class="form-control" id="id" readonly>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newTitle" class="form-label">Titre</label>
+                            <input type="text" class="form-control" id="newTitle">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newYear" class="form-label">Année</label>
+                            <input type="number" class="form-control" id="newYear">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newRuntime" class="form-label">Durée (min)</label>
+                            <input type="number" class="form-control" id="newRuntime">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newDirector" class="form-label">Réalisateur</label>
+                            <input type="text" class="form-control" id="newDirector">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newActors" class="form-label">Acteurs</label>
+                            <input type="text" class="form-control" id="newActors">
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPlot" class="form-label">Synopsis</label>
+                            <textarea class="form-control" id="newPlot"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="newPosterUrl" class="form-label">URL de l'affiche</label>
+                            <input type="text" class="form-control" id="newPosterUrl">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <!-- Bouton "Enregistrer" ajusté -->
+                    <button type="button" class="btn btn-primary" onclick="ajouterFilm();">Enregistrer</button>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <!-- La modale pour modifier un film-->
+    <div class="modal fade" id="modalFormulaire" tabindex="-1" aria-labelledby="modalFormulaireLabel"
+        aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <h5 class="modal-title" id="modalFormulaireLabel">Modifier un film</h5>
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <form id="formulaireFilm">
+                        <!-- ID du film (non modifiable) -->
+                        <div class="mb-3">
+                            <label for="id" class="form-label">ID du film</label>
+                            <input type="text" class="form-control" id="id" readonly>
+                        </div>
+                        <!-- Autres champs modifiables -->
+                        <div class="mb-3">
+                            <label for="title" class="form-label">Titre</label>
+                            <input type="text" class="form-control" id="title">
+                        </div>
+                        <div class="mb-3">
+                            <label for="year" class="form-label">Année</label>
+                            <input type="number" class="form-control" id="year">
+                        </div>
+                        <div class="mb-3">
+                            <label for="runtime" class="form-label">Durée (min)</label>
+                            <input type="number" class="form-control" id="runtime">
+                        </div>
+                        <div class="mb-3">
+                            <label for="director" class="form-label">Réalisateur</label>
+                            <input type="text" class="form-control" id="director">
+                        </div>
+                        <div class="mb-3">
+                            <label for="actors" class="form-label">Acteurs</label>
+                            <input type="text" class="form-control" id="actors">
+                        </div>
+                        <div class="mb-3">
+                            <label for="plot" class="form-label">Synopsis</label>
+                            <textarea class="form-control" id="plot"></textarea>
+                        </div>
+                        <div class="mb-3">
+                            <label for="posterUrl" class="form-label">URL de l'affiche</label>
+                            <input type="text" class="form-control" id="posterUrl">
+                        </div>
+                    </form>
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Fermer</button>
+                    <button type="button" class="btn btn-primary" onclick="modifierFilm();">Enregistrer les modifications</button>
+
+                </div>
+            </div>
+            <!-- Modal de confirmation de suppression -->
+            <div class="modal fade" id="deleteMovieModal" tabindex="-1" aria-labelledby="deleteMovieModalLabel"
+                aria-hidden="true">
+                <div class="modal-dialog">
+                    <div class="modal-content">
+                        <div class="modal-header">
+                            <h5 class="modal-title" id="deleteMovieModalLabel">Confirmer la suppression</h5>
+                            <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                        </div>
+                        <div class="modal-body">
+                            Êtes-vous sûr de vouloir supprimer ce film?
+                        </div>
+                        <div class="modal-footer">
+                            <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Annuler</button>
+                            <button type="button" class="btn btn-danger" id="confirmDelete">Supprimer</button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</body>
+
+</html>

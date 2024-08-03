@@ -1,0 +1,649 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+ <biblio>
+    <categories>
+        <categ>Toutes</categ>
+        <categ>Roman</categ>
+        <categ>Bandes dessinées</categ>
+        <categ>Nouvelle</categ>
+        <categ>Susppense</categ>
+     </categories>
+     <livre>
+         <IdLivre>400</IdLivre>
+         <Titre>Une aventure d'Astérix le gaulois. Le devin</Titre>
+         <IdAuteur>11</IdAuteur>
+         <Annee>1972</Annee>
+         <Pages>48</Pages>
+         <Categorie>bandes dessinées</Categorie>
+         <Pochette>img1.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>300</IdLivre>
+         <Titre>Une aventure d'Astérix le gaulois. Astérix en Corse</Titre>
+         <IdAuteur>11</IdAuteur>
+         <Annee>1973</Annee>
+         <Pages>48</Pages>
+         <Categorie>bandes dessinées</Categorie>
+         <Pochette>img2.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>200</IdLivre>
+         <Titre>Une aventure d'Astérix le gaulois. Le cadeau de César</Titre>
+         <IdAuteur>11</IdAuteur>
+         <Annee>1974</Annee>
+         <Pages>48</Pages>
+         <Categorie>bandes dessinées</Categorie>
+         <Pochette>img3.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>500</IdLivre>
+         <Titre>Les filles de Caleb Tome 1. Le chant du coq</Titre>
+         <IdAuteur>1</IdAuteur>
+         <Annee>1985</Annee>
+         <Pages>528</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>img4.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>125</IdLivre>
+         <Titre>Album de famille</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1985</Annee>
+         <Pages>454</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>img5.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>642</IdLivre>
+         <Titre>Les filles de Caleb Tome 2. Le cri de l'oie blanche</Titre>
+         <IdAuteur>1</IdAuteur>
+         <Annee>1986</Annee>
+         <Pages>790</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>234</IdLivre>
+         <Titre>Secrets</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1986</Annee>
+         <Pages>320</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>350</IdLivre>
+         <Titre>La ronde des souvenirs</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1988</Annee>
+         <Pages>372</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>124</IdLivre>
+         <Titre>Traversées</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1988</Annee>
+         <Pages>387</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>237</IdLivre>
+         <Titre>Une autre vie</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1988</Annee>
+         <Pages>381</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>900</IdLivre>
+         <Titre>La belle vie</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1989</Annee>
+         <Pages>451</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>890</IdLivre>
+         <Titre>La vagabonde</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1989</Annee>
+         <Pages>410</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>265</IdLivre>
+         <Titre>Le don de l'amour Loving</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1989</Annee>
+         <Pages>392</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>354</IdLivre>
+         <Titre>Star</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1990</Annee>
+         <Pages>473</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>453</IdLivre>
+         <Titre>Un parfait inconnu</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1990</Annee>
+         <Pages>361</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>789</IdLivre>
+         <Titre>Zoya</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1990</Annee>
+         <Pages>470</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>987</IdLivre>
+         <Titre>L'âme soeur</Titre>
+         <IdAuteur>7</IdAuteur>
+         <Annee>1990</Annee>
+         <Pages>380</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>765</IdLivre>
+         <Titre>Dors ma jolie</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1990</Annee>
+         <Pages>289</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>213</IdLivre>
+         <Titre>Marie LaFlamme Tome 1</Titre>
+         <IdAuteur>2</IdAuteur>
+         <Annee>1991</Annee>
+         <Pages>398</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>678</IdLivre>
+         <Titre>Cher Daddy</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1991</Annee>
+         <Pages>370</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>912</IdLivre>
+         <Titre>Kaléidoscope</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1991</Annee>
+         <Pages>389</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>983</IdLivre>
+         <Titre>Marie LaFlamme Tome 2. Nouvelle-France</Titre>
+         <IdAuteur>2</IdAuteur>
+         <Annee>1992</Annee>
+         <Pages>383</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>930</IdLivre>
+         <Titre>Les promesses de la passion</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1992</Annee>
+         <Pages>301</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>934</IdLivre>
+         <Titre>Souvenirs du Vietnam</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1992</Annee>
+         <Pages>372</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>222</IdLivre>
+         <Titre>Nous n'irons plus au bois</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1992</Annee>
+         <Pages>341</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>333</IdLivre>
+         <Titre>Recherche jeune femme aimant danser</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1992</Annee>
+         <Pages>342</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>777</IdLivre>
+         <Titre>Ces enfants d'ailleurs Tome 1. Même les oiseaux se sont tus</Titre>
+         <IdAuteur>1</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>595</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>999</IdLivre>
+         <Titre>Coups de coeur</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>320</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>765</IdLivre>
+         <Titre>Joyaux</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>478</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>645</IdLivre>
+         <Titre>La fin de l'été</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>378</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>901</IdLivre>
+         <Titre>Un si grand amour</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>372</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>905</IdLivre>
+         <Titre>Les ailes du destin</Titre>
+         <IdAuteur>5</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>465</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>845</IdLivre>
+         <Titre>La menace</Titre>
+         <IdAuteur>8</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>63</Pages>
+         <Categorie>nouvelle</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>890</IdLivre>
+         <Titre>La maison du guet</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>224</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>548</IdLivre>
+         <Titre>La nuit du renard</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>277</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>109</IdLivre>
+         <Titre>Le démon du passé</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>345</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>439</IdLivre>
+         <Titre>Un jour tu verras...</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1993</Annee>
+         <Pages>343</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>910</IdLivre>
+         <Titre>Marie LaFlamme Tome 3. La renarde</Titre>
+         <IdAuteur>2</IdAuteur>
+         <Annee>1994</Annee>
+         <Pages>397</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>915</IdLivre>
+         <Titre>Disparu</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1994</Annee>
+         <Pages>305</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>925</IdLivre>
+         <Titre>La maison des jours heureux</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1994</Annee>
+         <Pages>496</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>888</IdLivre>
+         <Titre>Naissances</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1994</Annee>
+         <Pages>356</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>111</IdLivre>
+         <Titre>Le grand blanc</Titre>
+         <IdAuteur>5</IdAuteur>
+         <Annee>1994</Annee>
+         <Pages>891</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>999</IdLivre>
+         <Titre>Souviens-toi</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1994</Annee>
+         <Pages>388</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>222</IdLivre>
+         <Titre>Ces enfants d'ailleurs Tome 2. L'envol des tourterelles</Titre>
+         <IdAuteur>1</IdAuteur>
+         <Annee>1995</Annee>
+         <Pages>408</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>835</IdLivre>
+         <Titre>Accident</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1995</Annee>
+         <Pages>344</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>836</IdLivre>
+         <Titre>Le cadeau</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1995</Annee>
+         <Pages>212</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>837</IdLivre>
+         <Titre>Plein ciel</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1995</Annee>
+         <Pages>420</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>624</IdLivre>
+         <Titre>Un monde de rêve</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1995</Annee>
+         <Pages>384</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>625</IdLivre>
+         <Titre>Cinq jours a Paris</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1996</Annee>
+         <Pages>245</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>526</IdLivre>
+         <Titre>L'anneau de Cassandra</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1996</Annee>
+         <Pages>397</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>738</IdLivre>
+         <Titre>Maintenant et pour toujours</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1996</Annee>
+         <Pages>530</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>538</IdLivre>
+         <Titre>Malveillance</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1996</Annee>
+         <Pages>391</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>638</IdLivre>
+         <Titre>Ce que vivent les roses</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1996</Annee>
+         <Pages>285</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>426</IdLivre>
+         <Titre>Douce nuit</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1996</Annee>
+         <Pages>213</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>289</IdLivre>
+         <Titre>Honneur et Courage</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>350</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>389</IdLivre>
+         <Titre>La foudre</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>410</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>489</IdLivre>
+         <Titre>Une saison de passion</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>565</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>589</IdLivre>
+         <Titre>L'Homme au masque</Titre>
+         <IdAuteur>7</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>474</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>982</IdLivre>
+         <Titre>Joyeux Noël Merry Christmas</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>230</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>983</IdLivre>
+         <Titre>La maison du clair de lune, suivi de Vol de routine</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>363</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>984</IdLivre>
+         <Titre>Tu m'appartiens</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1997</Annee>
+         <Pages>341</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>985</IdLivre>
+         <Titre>Le Fantôme</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1998</Annee>
+         <Pages>416</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>555</IdLivre>
+         <Titre>Le ranch, suivi de Amour</Titre>
+         <IdAuteur>4</IdAuteur>
+         <Annee>1998</Annee>
+         <Pages>502</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>557</IdLivre>
+         <Titre>Ni vue ni connue</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1998</Annee>
+         <Pages>266</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>556</IdLivre>
+         <Titre>La petite fille qui aimait trop les allumettes</Titre>
+         <IdAuteur>3</IdAuteur>
+         <Annee>1998</Annee>
+         <Pages>180</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>558</IdLivre>
+         <Titre>Une si longue nuit</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>1999</Annee>
+         <Pages>158</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>755</IdLivre>
+         <Titre>Et nous nous reverrons...</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>2000</Annee>
+         <Pages>356</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>655</IdLivre>
+         <Titre>Soins intensifs</Titre>
+         <IdAuteur>2</IdAuteur>
+         <Annee>2001</Annee>
+         <Pages>251</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>855</IdLivre>
+         <Titre>Avant de te dire adieu</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>2001</Annee>
+         <Pages>346</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>757</IdLivre>
+         <Titre>Prisonniers du temps</Titre>
+         <IdAuteur>10</IdAuteur>
+         <Annee>2001</Annee>
+         <Pages>620</Pages>
+         <Categorie>roman</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+     <livre>
+         <IdLivre>134</IdLivre>
+         <Titre>Dans la rue où vit celle que j'aime</Titre>
+         <IdAuteur>6</IdAuteur>
+         <Annee>2002</Annee>
+         <Pages>348</Pages>
+         <Categorie>susppense</Categorie>
+         <Pochette>avatar.jpg</Pochette>
+     </livre>
+ </biblio>
