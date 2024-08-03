@@ -1,0 +1,259 @@
+@charset "UTF-8";
+/*crée un espace pour que le text ne soit pas coller*/
+main{
+    margin-top: 15px;
+    margin-left: 15px;
+    margin-right: 15px;
+}
+/*Cosmetic menu navigation + effect hover*/
+.mdl-navigation
+{
+    color:whitesmoke;
+    font-family: papyrus;
+    font-weight: bold;
+    border: 10px solid #4caf50;
+    Text-decoration:none;
+    font-size: 12pt;
+    background-color: #4caf50;
+    text-align: center;
+}
+.mdl-navigation :hover {
+    font-size: larger;
+    border: 5px solid #4caf50;
+    color:white;
+    text-shadow: 2px 2px #5a5a5a;
+}
+.mdl-layout_title {
+    color:black;
+    font-family: papyrus;
+    font-weight: bold;
+    border: 10px solid #4caf50;
+    background-color: #4caf50;
+    font-size: xx-large;
+    text-align: center;
+    margin-bottom: 0px;
+    margin-top: 0px;
+}
+
+.mdl-navigation.Link {
+    padding: 0px;
+}
+
+.mdl-layout__drawer {
+    background-color: #4caf50;
+    border-right: none;
+}
+
+/*Cosmetic de tous les titres de toutes les pages.*/
+h2{
+    color:black;
+    font-family: papyrus;
+    font-weight: bold; 
+}
+
+h3{
+    color:black;
+    font-family: papyrus;
+    font-weight: bold; 
+}
+
+h4{
+    color:black;
+    font-family: papyrus;
+    font-weight: bold;
+}
+
+/*arrenge boite flexible*/
+#container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+/*ajout ligne separateur*/
+aside {
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    border-left: solid 1px rgba(0, 0, 0, 0.550);
+    width: 1000px;
+    margin-bottom: 15px;
+}
+/*lié icones pdf*/
+a[href$=".pdf"]::before {
+    display: inline-block;
+    content: url('icones/icon_pdf.gif');
+    padding-right: 10px;
+}
+/*cosmetic*/
+a.document-link {
+    text-decoration: none;
+}
+a.document-link:hover {
+    text-decoration: underline;
+}
+/*si document excel ou word est dans la page, au cas ou, dans le future.*/
+a[href$=".docx"]::before {
+    display: inline-block;
+    content: url('icones/icon_word.gif');
+    padding-right: 10px;
+}
+a[href$=".xlsx"]::before {
+    display: inline-block;
+    content: url('icones/icon_excel.gif');
+    padding-right: 10px;
+}
+
+a.text {
+    color:black;
+    padding-left: 5px;
+}
+/*effect hover*/
+a.linkweb {
+    text-decoration: none;
+}
+
+a.linkweb:hover {
+    text-decoration: underline;
+}
+/*border autour des images*/
+img.imgmain {
+    border: 1px solid black;
+    padding: 5px;
+}
+/*cosmetic MDL modification*/
+div.mdl-card__media {
+    background-color: #4caf50;
+}
+
+.source-style{
+    color:black;
+    font-family: papyrus;
+    font-weight: bold;
+    font-size: 10pt;
+}
+/*cosmetic tableau*/
+table {
+    border-collapse: separate; 
+    border-spacing: 0;
+}
+/*titre tableau*/
+caption {
+    color:black;
+    font-family: papyrus;
+    font-weight: bold;
+    font-size: 20pt;
+    padding: 20px;
+    caption-side: bottom; 
+    text-align: center;
+}
+
+td,th {
+    text-align: left;
+    padding: 15px;
+    margin: 20px;
+    font-size: large;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.295);
+    border-left: none;
+    border-right: none;
+    color: rgb(26, 70, 135);
+    opacity: 0.5; 
+}
+
+tr:hover td {
+    color: rgb(26, 70, 135);
+    opacity: 1;
+    font-weight: bold;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1475);
+}
+
+th{
+    color: rgb(26, 70, 135);
+    border-bottom: 1.4px solid rgb(26, 70, 135);
+    opacity: 1;
+}
+
+/*address en italic*/
+.ital-link{
+    font-style: italic;
+}
+
+#containerjoindre {
+    box-sizing: content-box;
+    width: 100%;
+}
+
+div.vidmain {
+    border: 1px solid black;
+    padding: 5px;
+}
+
+
+.mdl-button.mdl-js-button.mdl-button--raised {
+    background-color: #4caf50;
+    color:whitesmoke;
+    font-family: papyrus;
+    font-weight: bold;
+}
+
+#buttonHover :hover{
+    font-size: medium;
+    color:white;
+    text-shadow: 2px 2px #5a5a5a;
+}
+
+.container_tableau {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+@media screen and (max-width: 640px) {
+    #container {
+        flex-direction: column;
+    }
+
+    .mdl-mini-footer__right-section,
+    .mdl-mini-footer__left-section {
+        display: none;
+    }
+
+    aside {
+        border-left: none;
+        padding: 0px;
+    }
+
+    iframe {
+        width: auto;
+    }
+    #video-container {
+        width: 400px;
+    }
+
+    blockquote {
+        width: 350px;
+        align-items: center;
+        margin-inline-start: 10px;
+        margin-inline-end: 10px;
+    }
+
+    td, th {
+        font-size: smaller;
+    }
+
+    .mdl-layout-spacer {
+        padding: 100px;
+    }
+
+    caption {
+        font-size: medium;
+    }
+}
+
+blockquote {
+    font-size: 10pt;
+}
+
+.mdl-radio__label {
+    padding-right: 15px;
+}

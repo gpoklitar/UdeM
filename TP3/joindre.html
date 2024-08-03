@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="fr">
+    <head>
+        <meta charset="utf-8">
+        <title>IFT1144 Tp3</title>
+        <link rel="stylesheet" href="https://code.getmdl.io/1.3.0/material.green-blue.min.css" />
+        <script defer src="https://code.getmdl.io/1.3.0/material.min.js"></script>
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+    </head>
+    <body>
+        <div class="mdl-layout mdl-js-layout mdl-layout--fixed-header">
+            <header class="mdl-layout__header">
+                <div class="mdl-layout__header-row">
+                    <h2>柔道 - Judo</h2>
+                    <div class="mdl-layout-spacer"></div>
+                    <nav class="mdl-navigation">
+                        <a class="mdl-navigation Link" href="index.html">Accueil</a> 
+                        <a class="mdl-navigation Link" href="categories.html">Catégories</a>
+                        <a class="mdl-navigation Link" href="evenements.html">Événements</a>
+                        <a class="mdl-navigation Link" href="surnous.html">Sur nous</a>
+                        <a class="mdl-navigation Link" href="joindre.html">Nous joindre</a> 
+                        <a class="mdl-navigation Link" href="https://www-ens.iro.umontreal.ca/~poklitag/yassik3/index.html">Site publique</a>
+                    </nav>
+                </div>
+                <link rel="stylesheet" href="css/style.css">
+            </header>
+            <div class="mdl-layout__drawer">
+                <h2 class="mdl-layout_title">柔道 - Judo</h2>
+                <nav class="mdl-navigation">
+                    <a class="mdl-navigation Link" href="index.html">Accueil</a> 
+                    <a class="mdl-navigation Link" href="categories.html">Catégories</a>
+                    <a class="mdl-navigation Link" href="evenements.html">Événements</a>
+                    <a class="mdl-navigation Link" href="surnous.html">Sur nous</a>
+                    <a class="mdl-navigation Link" href="joindre.html">Nous joindre</a> 
+                    <a class="mdl-navigation Link" href="https://www-ens.iro.umontreal.ca/~poklitag/yassik3/index.html">Site publique</a>
+                </nav>
+            </div>
+            <main class="mdl-layout__content">
+                <div id="container">
+                    <article>
+                        <section id="containerjoindre">
+                            <h3>Nous joindre</h3>
+                            <i>Téléphone : (514)-555-5555<br>Fax : (514)-555-5555<br><br>9999 Edouard Montpetit Blvd,<br>Montreal, Quebec A1A 1A1</i>
+                            <address class="ital-link">
+                                <br><a class="linkweb" href="mailto:gueorgui.poklitar@umontreal.ca">Envoyer un courriel</a><br>
+                            </address>
+                            <br>
+                        </section>
+                    </article>
+                    <aside>
+                        <p>Pour faire partie du groupe d'admirateurs <br>de judo, veuillez, s'il vous plait, remplir le <br>formulaire ci-dessous.</p>
+                        <form method="post" action="http://www-labs.iro.umontreal.ca/~coelho/ExemplesHTML/Forms/echoForm.php">
+                            <h4>Données personnelles</h4>
+                            <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="nom">Nom:</label>
+                                    <input class = "mdl-textfield__input" type="text" name="nom" id="nom" required>
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label for="age" class="mdl-tooltip">Nous vous demandons votre âge seulement pour des fins statistiques</label>
+                                    <label class = "mdl-textfield__label" for="age">Age:</label>
+                                    <input class = "mdl-textfield__input" type="number" name="age" id="age">
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="tel" >Téléphone:</label>
+                                    <input class = "mdl-textfield__input" type="tel" name="tel" id="tel" placeholder="(999) 999-9999"
+                                        pattern="\([2-9][0-9]{2}\) [0-9]{3}-[0-9]{4}">
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="courriel">Courriel:</label>
+                                    <input class = "mdl-textfield__input" type="email" name="courriel" id="courriel" required>
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="confcourriel">Confirmation du courriel:</label>
+                                    <input class = "mdl-textfield__input" type="email" name="confirmation" id="confcourriel" required>
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="ville">Ville:</label>
+                                    <input class = "mdl-textfield__input" type="text" name="ville" id="ville">
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="Province">Province:</label>
+                                    <select class = "mdl-textfield__input" id="Province" name="province" autocomplete="address-level1">
+                                        <option value="Alberta">AB</option>
+                                        <option value="British Columbia">BC</option>
+                                        <option value="Manitoba">MB</option>
+                                        <option value="New Brunswick">NB</option>
+                                        <option value="Newfoundland and Labrador">NL</option>
+                                        <option value="Northwest Territory">NT</option>
+                                        <option value="Nova Scotia">NS</option>
+                                        <option value="Nunavut">NU</option>
+                                        <option value="Ontario">ON</option>
+                                        <option value="Prince Edward Island">PE</option>
+                                        <option value="Quebec" selected>QC</option>
+                                        <option value="Saskatchewan">SK</option>
+                                        <option value="Yukon">YT</option>
+                                    </select>
+                                </div>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label" for="code_postal">Code postal:</label>
+                                    <input class = "mdl-textfield__input" type="text" name="code postal" id="code_postal" placeholder="X9X9X9"
+                                        pattern="[A-Z][0-9][A-Z][0-9][A-Z][0-9]">
+                                </div>
+                            </div>
+                            <div>
+                                <h4>Autres informations</h4>
+                                <p>Est-ce que vous voulez recevoir <br>les
+                                    nouvelles par courriel?
+                                </p>
+                                <div>
+                                    <label class="mdl-radio mdl-js-radio" for="oui">
+                                        <input type="radio" name="choix" value="oui" checked id="oui" class="mdl-radio__button">
+                                        <span class="mdl-radio__label">oui</span>
+                                    </label>
+                                    <label class="mdl-radio mdl-js-radio" for="non">
+                                        <input type="radio" name="choix" value="non" id="non" class="mdl-radio__button">
+                                        <span class="mdl-radio__label">non</span>
+                                     </label>
+                                </div>
+                                <br>
+                                <p>
+                                    De quelle façon avez-vous pris <br>
+                                    connaissance du judo?<br>
+                                </p>
+                                <div>
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="internet">
+                                        <input type="checkbox" name="choix1[ ]" checked id="internet" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Internet</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="télévision">
+                                        <input type="checkbox" name="choix1[ ]" id="télévision" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Télévision</span>
+                                    </label>
+                                </div>
+                                <div>
+                                    <label class="mdl-checkbox mdl-js-checkbox mdl-js-ripple-effect" for="revues">
+                                        <input type="checkbox" name="choix1[ ]" id="revues" class="mdl-checkbox__input">
+                                        <span class="mdl-checkbox__label">Revues</span>  
+                                    </label>
+                                </div>
+                                <br>
+                                <p>
+                                    Quel date préférez-vous pour un rendez-vous?
+                                </p>
+                                <div>
+                                    <label class="tab" for="rv"></label>
+                                    <input type="date" name="rv" id="rv">
+                                </div>
+                                <br>
+                                <div class = "mdl-textfield mdl-js-textfield mdl-textfield--floating-label">
+                                    <label class = "mdl-textfield__label tab" for="msg">Commentaires:</label>
+                                    <textarea class = "mdl-textfield__input" name="msg" id="msg" rows="3" cols="20"></textarea>
+                                </div>
+                            </div>
+                            <br>
+                            <div id="buttonHover">
+                                <input class="mdl-button mdl-js-button mdl-button--raised" type="submit" value="Envoyer" id="submitBtn">
+                            </div>
+                        </form>
+                    </aside>
+                </div>
+            </main>
+            <footer class="mdl-mini-footer">
+                <div class="mdl-mini-footer__left-section">
+                    <a href="http://validator.w3.org/check?uri=referer" onclick="this.href='http://validator.w3.org/check?uri=' + document.URL">
+                    <img src="http://www.w3.org/html/logo/badge/html5-badge-h-semantics.png" width="133" height="64" alt="HTML5 Powered with Semantics" title="HTML5 Powered with Semantics" />
+                    </a>
+                </div>
+                <div class="mdl-mini-footer__middle-section">
+                    <time id="dateAttributElementId" datetime="2023-04-15">2023-04-15</time>
+                </div>
+                <div class="mdl-mini-footer__right-section">
+                    <a href="http://jigsaw.w3.org/css-validator/check/referer"  
+                    onclick="this.href='http://jigsaw.w3.org/css-validator/validator?uri=' + document.URL" >
+                        <img src="http://www.w3.org/Icons/valid-css.png" alt="CSS validator" title="CSS validator"/>
+                    </a>
+                </div>
+            </footer>
+        </div>
+        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <script src="js/formvalidation.js"></script>
+        <script src="js/date.js"></script>
+    </body>
+</html>
